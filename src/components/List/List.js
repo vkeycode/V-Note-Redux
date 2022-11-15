@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import style from "./style.module.scss";
 import { deleteNote } from "../../redux/notes/notesSlice";
 const List = () => {
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState("");
   const notes = useSelector((state) => state.notes.items);
   const dispatch = useDispatch();
 

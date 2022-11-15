@@ -18,9 +18,9 @@ const Form = () => {
     event.preventDefault();
     if (newNote.title && newNote.note) {
       dispatch(addNote(newNote));
-      setNewNote(initialNote);
-    }else{
-      alert("Fill in all fields")
+      setNewNote({ ...initialNote, color: newNote.color });
+    } else {
+      alert("Fill in all fields");
     }
   };
 
