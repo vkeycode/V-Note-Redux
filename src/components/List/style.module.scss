@@ -1,0 +1,61 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    .search {
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
+        padding-top: 15px;
+        border-top: 1px solid rgba(79, 79, 79, 0.581);
+        input {
+            height: 4vh;
+            width: 40%;
+        }
+    }
+    .note {
+        border-radius: 10px;
+        margin: 12px 14px;
+        width: 15rem;
+        height: 15rem;
+        h4 {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.368);
+            width: 100%;
+            padding: 5px 5px 5px 10px;
+            button {
+                margin-right: 6px;
+                margin-top: 2px;
+                font-size: 1rem;
+                font-weight: bold;
+                float: right;
+                width: 20px;
+                height: 20px;
+                border: none;
+                border-radius: 3px;
+                background: rgba(0, 0, 0, 0);
+                &:hover {
+                    color: aliceblue;
+                    background: rgba(0, 0, 0, 0.5);
+                    cursor: pointer;
+                }
+            }
+        }
+        p {
+            padding: 10px;
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .list{
+        justify-content: center;
+        .search{
+            input{
+                width: 80%;
+                height: 5vh;
+                text-indent: 5px;
+            }
+        }
+    }
+}
